@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>陈瀛锋 - 个人简历</title>
+<style>
+  :root {
+    --primary: #2563eb;
+    --primary-soft: #eff6ff;
+    --text: #1f2937;
+    --text-light: #6b7280;
+    --border: #e5e7eb;
+    --bg: #f3f4f6;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 24px 12px;
+  }
+  .page {
+    max-width: 794px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,.08);
+    padding: 40px 48px;
+  }
+  @media print {
+    body { background: #fff; padding: 0; }
+    .page { box-shadow: none; max-width: none; padding: 24px 32px; }
+    .print-tip { display: none; }
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--primary);
+  }
+  .avatar {
+    width: 84px; height: 84px;
+    border-radius: 50%;
+    background: var(--primary-soft);
+    color: var(--primary);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 30px; font-weight: 700;
+    flex-shrink: 0;
+  }
+  .header-main h1 { font-size: 28px; letter-spacing: 2px; }
+  .header-main .job { color: var(--primary); font-size: 15px; margin-top: 4px; font-weight: 500; }
+  .contact {
+    margin-left: auto;
+    font-size: 13px;
+    color: var(--text-light);
+    text-align: right;
+    line-height: 1.9;
+  }
+  .contact span { display: block; }
+
+  /* Section */
+  section { margin-top: 24px; }
+  .sec-title {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 16px; font-weight: 700; color: var(--primary);
+    margin-bottom: 12px;
+  }
+  .sec-title::before {
+    content: ""; width: 4px; height: 16px;
+    background: var(--primary); border-radius: 2px;
+  }
+  .sec-title::after {
+    content: ""; flex: 1; height: 1px; background: var(--border); margin-left: 8px;
+  }
+
+  /* Education */
+  .edu { display: flex; justify-content: space-between; font-size: 14px; }
+  .edu .school { font-weight: 600; font-size: 15px; }
+  .edu .major { color: var(--text-light); }
+  .edu .time { color: var(--text-light); font-size: 13px; white-space: nowrap; }
+  .edu-detail { margin-top: 6px; font-size: 13px; color: var(--text-light); }
+
+  /* Skill chips */
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    background: var(--primary-soft);
+    color: var(--primary);
+    font-size: 13px;
+    padding: 4px 12px;
+    border-radius: 999px;
+  }
+
+  /* Item blocks */
+  .item { margin-bottom: 14px; font-size: 14px; }
+  .item-head { display: flex; justify-content: space-between; align-items: baseline; }
+  .item-head .name { font-weight: 600; }
+  .item-head .role { color: var(--primary); font-size: 13px; margin-left: 8px; }
+  .item-head .time { color: var(--text-light); font-size: 12px; }
+  .item ul { margin-top: 4px; padding-left: 18px; color: #4b5563; }
+  .item ul li { font-size: 13.5px; margin-bottom: 2px; }
+
+  .placeholder { color: #9ca3af; font-style: italic; font-size: 13px; }
+
+  ul.plain { padding-left: 18px; color: #4b5563; font-size: 13.5px; }
+
+  .print-tip {
+    max-width: 794px; margin: 0 auto 12px;
+    font-size: 12px; color: var(--text-light); text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="print-tip">💡 在浏览器中按 <b>Ctrl + P</b> 可将本页打印 / 导出为 PDF（目标打印机选“另存为 PDF”）</div>
+
+<div class="page">
+
+  <!-- 头部 -->
+  <div class="header">
+    <div class="avatar">陈</div>
+    <div class="header-main">
+      <h1>陈瀛锋</h1>
+      <div class="job">求职意向：人工智能 / 算法 / 数据方向</div>
+    </div>
+    <div class="contact">
+      <span>📱 手机：<span class="placeholder">138-xxxx-xxxx</span></span>
+      <span>✉️ 邮箱：<span class="placeholder">your@email.com</span></span>
+      <span>📍 现居：<span class="placeholder">广东 · 广州/珠海</span></span>
+    </div>
+  </div>
+
+  <!-- 教育背景 -->
+  <section>
+    <div class="sec-title">教育背景</div>
+    <div class="edu">
+      <div>
+        <span class="school">广东科学技术职业学院</span>
+        <span class="major">　·　人工智能专业　·　大专</span>
+      </div>
+      <span class="time">2022.09 - 2025.06</span>
+    </div>
+    <div class="edu-detail">主修课程：Python 程序设计、机器学习基础、深度学习应用、数据库原理、Web 开发、数据结构与算法</div>
+  </section>
+
+  <!-- 专业技能 -->
+  <section>
+    <div class="sec-title">专业技能</div>
+    <div class="chips">
+      <span class="chip">Python</span>
+      <span class="chip">Flask</span>
+      <span class="chip">机器学习基础</span>
+      <span class="chip">MySQL</span>
+      <span class="chip">HTML / CSS / JS</span>
+      <span class="chip">Git</span>
+      <span class="chip">PyCharm / VSCode</span>
+    </div>
+    <ul class="plain" style="margin-top:10px">
+      <li>熟悉 Python 编程，了解 Flask Web 框架的路由、视图与模板使用</li>
+      <li>了解常见机器学习算法（分类、回归、聚类）及 Scikit-learn 基本使用</li>
+      <li>掌握 MySQL 数据库基本增删改查与表设计</li>
+    </ul>
+  </section>
+
+  <!-- 项目经历 -->
+  <section>
+    <div class="sec-title">项目 / 比赛经历</div>
+
+    <div class="item">
+      <div class="item-head">
+        <span><span class="name">【示例】基于 Flask 的校园信息管理系统</span><span class="role">个人项目 · 负责人</span></span>
+        <span class="time">2024.03 - 2024.06</span>
+      </div>
+      <ul>
+        <li>使用 Python + Flask + MySQL 搭建校园信息管理后台，实现学生信息增删改查</li>
+        <li>前端使用 HTML/CSS/JS 完成页面渲染，配合 Bootstrap 美化界面</li>
+        <li>完成本地部署与功能测试，撰写项目文档</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-head">
+        <span><span class="name">【示例】人工智能课程实训项目</span><span class="role">课程项目</span></span>
+        <span class="time">2024.09 - 2024.12</span>
+      </div>
+      <ul>
+        <li>参与基于机器学习的数据分类实训，负责数据清洗与模型训练</li>
+        <li>使用 Scikit-learn 完成模型对比实验并输出分析报告</li>
+      </ul>
+    </div>
+    <div class="placeholder">（以上为示例内容，可替换为你的真实项目 / 比赛经历）</div>
+  </section>
+
+  <!-- 实习经历 -->
+  <section>
+    <div class="sec-title">实习 / 工作经历</div>
+    <div class="item">
+      <div class="item-head">
+        <span><span class="name">【待补充】公司名称</span><span class="role">岗位名称</span></span>
+        <span class="time">20xx.xx - 20xx.xx</span>
+      </div>
+      <ul>
+        <li>【待补充】主要负责的工作内容 1</li>
+        <li>【待补充】主要负责的工作内容 2</li>
+      </ul>
+    </div>
+    <div class="placeholder">（如暂无实习经历，可将此模块改为“校园实践 / 社会实践”）</div>
+  </section>
+
+  <!-- 获奖证书 -->
+  <section>
+    <div class="sec-title">获奖 / 证书</div>
+    <ul class="plain">
+      <li class="placeholder">【示例】全国计算机等级考试二级（Python）</li>
+      <li class="placeholder">【示例】校级奖学金 / 学科竞赛奖项</li>
+      <li class="placeholder">【示例】英语 A / B 级证书</li>
+    </ul>
+  </section>
+
+  <!-- 自我评价 -->
+  <section>
+    <div class="sec-title">自我评价</div>
+    <p style="font-size:13.5px;color:#4b5563">
+      对人工智能与软件开发保持学习热情，动手能力强，能够独立完成从需求分析到功能实现的小型项目；做事踏实认真，乐于沟通协作，希望通过实习与项目实践不断提升工程能力。
+    </p>
+  </section>
+
+</div>
+</body>
+</html>
