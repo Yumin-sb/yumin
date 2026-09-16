@@ -13,10 +13,36 @@
      这里放页面级的补充样式 */
   .print-tip b { color: var(--primary); }
   .self-eval { font-size: 13.5px; color: #4b5563; }
+  .js-demo {
+    max-width: 794px; margin: 0 auto 16px;
+    background: #fff; box-shadow: 0 4px 20px rgba(0,0,0,.08);
+    padding: 14px 24px; font-size: 14px;
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  }
+  .js-demo input[type="button"] {
+    background: var(--primary); color: #fff; border: none;
+    padding: 8px 20px; border-radius: 6px; cursor: pointer; font-size: 14px;
+  }
+  .js-demo a { color: var(--primary); }
 </style>
+
+<!-- ===== JS 引入方式二：内嵌式（写在 head 的 <script> 里） ===== -->
+<script>
+  console.log("内嵌式引入javascript")
+</script>
+
+<!-- ===== JS 引入方式三：外链式（引入外部 j1.js 文件） ===== -->
+<script src="./j1.js" type="text/javascript"></script>
 </head>
 <body>
 <div class="print-tip">💡 在浏览器中按 <b>Ctrl + P</b> 可将本页打印 / 导出为 PDF（目标打印机选“另存为 PDF”）</div>
+
+<!-- ===== JS 引入方式一：行内式（直接写在标签属性里） ===== -->
+<div class="js-demo">
+  <span>JavaScript 三种引入方式演示：</span>
+  <input type="button" value="提交" onclick="alert('提交警告')">
+  <a href="javascript:confirm('确认跳转吗？')">点击跳转</a>
+</div>
 
 <div class="page">
 
